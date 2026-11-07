@@ -21,9 +21,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   static const _navItems = [
     NavItem('About', 'about'),
+    NavItem('Skills', 'skills'),
     NavItem('Experience', 'experience'),
     NavItem('Projects', 'projects'),
-    NavItem('Skills', 'skills'),
     NavItem('Contact', 'contact'),
   ];
 
@@ -78,9 +78,9 @@ class _HomePageState extends State<HomePage> {
             children: [
               const HeroSection(),
               AboutSection(key: _keys['about']),
+              SkillsSection(key: _keys['skills']),
               ExperienceSection(key: _keys['experience']),
               ProjectsSection(key: _keys['projects']),
-              SkillsSection(key: _keys['skills']),
               const EducationSection(),
               ContactSection(key: _keys['contact']),
               const _Footer(),
